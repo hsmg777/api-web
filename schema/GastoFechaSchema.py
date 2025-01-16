@@ -13,11 +13,9 @@ class GastoFechaSchema(Schema):
         required=True, 
         validate=validate_date,
         description="Fecha de inicio del filtro en formato YYYY-MM-DD",
-        example="2024-11-01"
     )
     fechaFin = fields.String(
         required=True, 
         validate=validate_date,
         description="Fecha de fin del filtro en formato YYYY-MM-DD",
-        example="2024-11-30"
     )
